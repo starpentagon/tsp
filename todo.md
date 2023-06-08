@@ -10,6 +10,7 @@ $ cd heuristic_contest
 $ git push --mirror https://github.com/starpentagon/XXX.git
 $ cd ..
 $ rm -rf heuristic_contest
+$ git clone --bare https://github.com/starpentagon/XXX.git
 ```
 
 * Heuristic contest用レポジトリをforkしコンテスト用のレポジトリを作成する
