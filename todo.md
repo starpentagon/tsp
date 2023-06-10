@@ -6,14 +6,15 @@
 * Heuristic contest用レポジトリを複製する(https://blog.furu07yu.com/entry/github-clone-bare-repository)
 ```shell
 $ git clone --bare https://github.com/starpentagon/heuristic_contest.git
-$ cd heuristic_contest
+$ cd heuristic_contest.git
 $ git push --mirror https://github.com/starpentagon/XXX.git
 $ cd ..
-$ rm -rf heuristic_contest
+$ rm -rf heuristic_contest.git
 $ git clone --bare https://github.com/starpentagon/XXX.git
 ```
 
-* Heuristic contest用レポジトリをforkしコンテスト用のレポジトリを作成する
+* .profileのahcコマンドを修正
+* Box上にフォルダを作成しスコア管理表を用意
 * Windows updateの適用
 * Visual Studio Codeの最新化
 * dockerデーモンの起動
