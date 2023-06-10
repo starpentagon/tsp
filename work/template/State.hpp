@@ -31,7 +31,12 @@ class State {
    // 状態を遷移させる
    void Move(const MoveType& move);
 
+   // 状態をエラー出力する
+   void Output() const;
+
   protected:
+   string GetString() const;
+
    int turn_;  // 遷移させた回数
 };
 }  // namespace std

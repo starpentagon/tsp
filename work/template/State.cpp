@@ -31,3 +31,14 @@ vector<MoveType> State::GetAllMoves() const {
 void State::Move(const MoveType& move) {
    assert(false);
 }
+
+string State::GetString() const {
+   assert(false);
+
+   string str;
+   return str;
+}
+
+void State::Output() const {
+   cerr << GetString() << endl;
+}
