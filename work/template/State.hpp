@@ -28,6 +28,9 @@ class State {
    // 可能な遷移集合全体を返す
    vector<MoveType> GetAllMoves() const;
 
+   // 近傍集合を返す
+   vector<MoveType> GetNeibours() const;
+
    // 状態を遷移させる
    void Move(const MoveType& move);
 

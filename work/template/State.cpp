@@ -28,6 +28,13 @@ vector<MoveType> State::GetAllMoves() const {
    return move_list;
 }
 
+vector<MoveType> State::GetNeibours() const {
+   assert(false);
+   vector<MoveType> move_list;
+
+   return move_list;
+}
+
 void State::Move(const MoveType& move) {
    assert(false);
 }
