@@ -11,6 +11,15 @@ enum OptimizeType {
    kOptMax   // 最大化
 };
 
+static const long long INF = 100100100100L;  // 十分大きな数
+
+long long GetWorstValue(const OptimizeType opt_type) {
+   if (opt_type == kOptMin)
+      return INF;
+   else
+      return -INF;
+}
+
 // 最小化/最大化に合わせて値を更新する
 template <class T>
 bool changeBetter(T& a, const T& b, const OptimizeType opt_type) {
