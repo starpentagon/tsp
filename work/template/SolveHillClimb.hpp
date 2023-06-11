@@ -1,23 +1,23 @@
 // 山登り法
 
 #include <bits/stdc++.h>
-#include "State.hpp"
 
-using SearchState = State;
+#include "Utility.hpp"
+#include "State.hpp"
 
 namespace std {
 
 class SolveHillClimb {
   public:
-   SolveHillClimb(int seed, const SearchState& state);
+   SolveHillClimb(int seed, const State& state, const OptimizeType opt_type);
 
-   SearchState Solve(const int seed, int max_iter);
+   State Solve(int max_iter);
 
   protected:
-   MoveType GetRandomMove(const vector<MoveType>& move_list) const;
-   SearchState init_state_;
-
    mt19937_64 mt_;
+   State init_state_;  // 初期状態
+
+   OptimizeType opt_type_;  // 最小化/最大化
 };
 
 }  // namespace std
