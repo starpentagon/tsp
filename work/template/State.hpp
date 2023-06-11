@@ -7,6 +7,7 @@ using ScoreType = long long;
 
 // 遷移
 using MoveType = int;
+static constexpr MoveType kInvalidMove = -1;  // 無効な遷移
 
 // 遷移のindex
 using MoveIndex = int;
@@ -37,9 +38,20 @@ class State {
    // 状態をエラー出力する
    void Output() const;
 
+   // root局面から最初の遷移を取得する
+   MoveType GetFirstMove() const {
+      return first_move_;
+   }
+
+   // root局面から最初の遷移を設定する
+   void SetFirstMove(const MoveType& move) {
+      first_move_ = move;
+   }
+
   protected:
    string GetString() const;
 
-   int turn_;  // 遷移させた回数
+   int turn_;             // 遷移させた回数
+   MoveType first_move_;  // 文脈ありゲームでroot局面から最初の遷移を記録する(文脈なしゲームの場合は不要)
 };
 }  // namespace std

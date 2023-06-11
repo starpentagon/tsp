@@ -3,7 +3,7 @@
 using namespace std;
 
 State::State()
-    : turn_(0) {
+    : turn_(0), first_move_(kInvalidMove) {
 }
 
 bool State::IsFinished() const {
