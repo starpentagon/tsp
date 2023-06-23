@@ -2,7 +2,7 @@
 
 #include "XorShift.hpp"
 #include "Parameter.hpp"
-#include "TempState.hpp"
+#include "State.hpp"
 
 using namespace std;
 

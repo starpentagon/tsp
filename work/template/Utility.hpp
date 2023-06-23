@@ -11,7 +11,9 @@ enum OptimizeType {
    kOptMax   // 最大化
 };
 
-static const long long INF = 100100100100L;  // 十分大きな数
+using ll = long long;
+   
+static constexpr ll INF = 100100100100L;  // 十分大きな数
 
 long long GetWorstValue(const OptimizeType opt_type) {
    if (opt_type == kOptMin)

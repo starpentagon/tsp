@@ -27,4 +27,8 @@ $ sudo service docker start
 # 短期コンテスト
 * テストケース生成/ダウンロード
 *  
+# デバッガ
 
+```shell
+$ gdb main /mnt/wslg/dumps/core.main
+```

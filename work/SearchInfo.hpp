@@ -2,6 +2,8 @@
 
 #include <bits/stdc++.h>
 
+namespace std {
+
 // 探索情報を管理するクラス
 class SearchInfo {
   public:
@@ -44,11 +46,12 @@ class SearchInfo {
    int GetMaxUpdateInterval() const;
 
   protected:
-   int iter_;                           // 探索回数数
-   std::vector<int> best_update_iter_;  // 最善解を更新時の探索回数数の履歴
+   int iter_;                      // 探索回数数
+   vector<int> best_update_iter_;  // 最善解を更新時の探索回数数の履歴
 
-   std::chrono::system_clock::time_point start_time_;  // 探索開始時間
+   chrono::system_clock::time_point start_time_;  // 探索開始時間
 
    int terminate_iter_;  // 探索回数上限
    int terminate_time_;  // 探索時間上限(ms)
 };
+}  // namespace std
