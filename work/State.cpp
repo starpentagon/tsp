@@ -2,6 +2,13 @@
 
 using namespace std;
 
+// clang-format off
+#define rep(i, n) for (int i = 0; (i) < (int)(n); (i)++)
+
+template<class T> bool chmax(T &a, const T &b) {if(a<b) {a=b; return true;} return false; }
+template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} return false; }
+// clang-format on
+
 State::State()
     : turn_(0), first_move_(kInvalidMove) {
 }

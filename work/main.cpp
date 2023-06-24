@@ -3,6 +3,7 @@
 #include "XorShift.hpp"
 #include "Parameter.hpp"
 #include "State.hpp"
+#include "Utility.hpp"
 
 using namespace std;
 

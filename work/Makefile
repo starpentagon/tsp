@@ -1,16 +1,18 @@
 CC = ccache g++
 #CFLAGS = -g -Wall -std=c++17 -O0 -fsanitize=undefined,address -DLOCAL
+
 # core dump出力用
 #CFLAGS = -g -Wall --std=c++17 -O0 -DLOCAL
 
 CFLAGS = -Wall --std=c++17 -O2 -DLOCAL
-#CFLAGS = -pg -g -Wall --std=c++17 -O0
+#CFLAGS = -pg -g -Wall --std=c++17 -O0 -DLOCAL
 
-ALL: main.o Parameter.o XorShift.o State.o
+ALL: main.o Parameter.o XorShift.o State.o Utility.o
 	$(CC) $(CFLAGS) -o main \
 	main.o \
 	XorShift.o \
 	Parameter.o \
+	Utility.o \
 	State.o
 	
 clean:

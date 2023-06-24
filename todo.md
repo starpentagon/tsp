@@ -32,3 +32,13 @@ $ sudo service docker start
 ```shell
 $ gdb main /mnt/wslg/dumps/core.main
 ```
+
+# プロファイル
+```shell
+$ gprof main gmon.out > prof.txt
+```
+
+# 高速化
+* 多次元配列の一次元化
+* 呼び出し回数の多い関数内の変数のstatic化
+
