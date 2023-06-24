@@ -13,5 +13,11 @@ template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.s
 // clang-format on
 
 int main() {
+   cerr << "Result="
+        << "dummy"
+        << " ";
+   cerr << "Score=" << 0 << " ";
+   cerr << endl;
+
    return 0;
 }
