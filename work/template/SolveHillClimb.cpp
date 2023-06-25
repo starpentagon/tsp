@@ -1,4 +1,5 @@
 #include "SolveHillClimb.hpp"
+#include "debug_hc.hpp"
 
 using namespace std;
 
@@ -13,11 +14,16 @@ SolveHillClimb::SolveHillClimb(int seed, const State &state, const OptimizeType 
     : mt_(seed), init_state_(state), opt_type_(opt_type) {
 }
 
-State SolveHillClimb::Solve(int max_iter) {
+State SolveHillClimb::Solve(int max_iter, SearchInfo &search) {
    State cur_state(init_state_), best_state(init_state_);
    ScoreType best_score = best_state.CalcScore();
 
    rep(i, max_iter) {
+      search.AddIter();
+      if (search.IsTerminate()) {
+         break;
+      }
+
       State n_state(cur_state);
 
       auto move_list = cur_state.GetNeibours();

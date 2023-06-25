@@ -4,6 +4,7 @@
 
 #include "Utility.hpp"
 #include "State.hpp"
+#include "SearchInfo.hpp"
 
 namespace std {
 
@@ -11,7 +12,7 @@ class SolveHillClimb {
   public:
    SolveHillClimb(int seed, const State& state, const OptimizeType opt_type);
 
-   State Solve(int max_iter);
+   State Solve(int max_iter, SearchInfo& search);
 
   protected:
    mt19937_64 mt_;
