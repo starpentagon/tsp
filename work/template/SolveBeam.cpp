@@ -9,11 +9,11 @@ template<class T> bool chmax(T &a, const T &b) {if(a<b) {a=b; return true;} retu
 template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} return false; }
 // clang-format on
 
-SolveBeam::SolveBeam(const State &state, OptimizeType opt_type)
-    : init_state_(state), opt_type_(opt_type) {
+SolveBeam::SolveBeam(const State &state, OptimizeType opt_type, const Parameter &param)
+    : init_state_(state), opt_type_(opt_type), param_(param) {
 }
 
-State SolveBeam::Solve() {
+State SolveBeam::Solve(SearchInfo &search) {
    int beam_depth = param_.GetBeamDepth();
    int beam_width = param_.GetBeamWidth();
 
@@ -24,6 +24,8 @@ State SolveBeam::Solve() {
 
    rep(d, beam_depth) {
       vector<P> n_state_list;
+
+      if (search.IsTerminate()) break;
 
       for (const auto &[cur_score, cur_state] : cur_state_list) {
          const auto &move_list = cur_state.GetAllMoves();

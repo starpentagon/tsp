@@ -5,14 +5,15 @@
 #include "Utility.hpp"
 #include "Parameter.hpp"
 #include "State.hpp"
+#include "SearchInfo.hpp"
 
 namespace std {
 
 class SolveBeam {
   public:
-   SolveBeam(const State& state, OptimizeType opt_type);
+   SolveBeam(const State& state, OptimizeType opt_type, const Parameter& param);
 
-   State Solve();
+   State Solve(SearchInfo& search);
 
   protected:
    Parameter param_;        // パラメタ
