@@ -5,6 +5,8 @@
 #include "State.hpp"
 #include "Utility.hpp"
 
+#include "debug.hpp"
+
 using namespace std;
 
 // clang-format off
@@ -14,6 +16,9 @@ template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.s
 
 int main() {
    State state;
+
+   int a = 1;
+   debug(a);
 
    cerr << "Result="
         << "dummy"

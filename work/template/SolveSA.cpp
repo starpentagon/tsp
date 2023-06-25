@@ -1,5 +1,7 @@
 #include "SolveSA.hpp"
 
+#include "debug_sa.hpp"
+
 using namespace std;
 
 // clang-format off
@@ -33,10 +35,14 @@ State SolveSA::Solve(int max_iter) {
       if (!is_next_move) continue;
 
       // 遷移
+      debug_sa(iter, n_score, delta_improve);
+
       cur_score = n_score;
       swap(cur_state, n_state);
 
       if (changeBetter(best_score, cur_score, opt_type_)) {
+         debug_sa(iter, best_score);
+
          best_state = cur_state;
       }
    }
@@ -64,6 +70,8 @@ bool SolveSA::CheckNextMove(const ScoreType delta_improve, const int iter, const
 
    static constexpr long long kProbScale = 1024 * 1024;
    long long prob_int = (long long)floor(kProbScale * prob);  // prob_int: [0, kProbScale)
+
+   // debug_sa(iter, temp, delta_improve, prob);
 
    long long rnd = mt_() % kProbScale;
    bool move_next = rnd < prob_int;

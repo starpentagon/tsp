@@ -1,4 +1,5 @@
 #include "State.hpp"
+#include "debug_st.hpp"
 
 using namespace std;
 
@@ -11,6 +12,7 @@ template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} retu
 
 State::State()
     : turn_(0), first_move_(kInvalidMove) {
+   debug_st(turn_);
 }
 
 bool State::IsFinished() const {
