@@ -1,6 +1,7 @@
 #include "SolveBeam.hpp"
+#include "debug_bm.hpp"
 
-using namespace std;
+   using namespace std;
 
 // clang-format off
 #define rep(i, n) for (int i = 0; (i) < (int)(n); (i)++)

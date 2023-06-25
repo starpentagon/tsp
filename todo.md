@@ -42,3 +42,5 @@ $ gprof main gmon.out > prof.txt
 * 多次元配列の一次元化
 * 呼び出し回数の多い関数内の変数のstatic化
 
+# オブジェクトのコピー
+* AHC020のStateクラスを参照(todo: ちゃんと書く)
