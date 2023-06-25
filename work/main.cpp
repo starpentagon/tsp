@@ -13,6 +13,8 @@ template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.s
 // clang-format on
 
 int main() {
+   State state;
+
    cerr << "Result="
         << "dummy"
         << " ";

@@ -39,4 +39,5 @@ core
 
 *.csv
 .ipynb_checkpoints
+Makefile.gen
 

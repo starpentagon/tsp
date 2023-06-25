@@ -42,7 +42,7 @@ vector<MoveType> State::GetNeibours() const {
    return move_list;
 }
 
-void State::Move(const MoveType& move) {
+void State::Move(const MoveType &move) {
    assert(false);
 }
 
