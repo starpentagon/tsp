@@ -11,15 +11,20 @@ template<class T> bool chmax(T &a, const T &b) {if(a<b) {a=b; return true;} retu
 template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} return false; }
 // clang-format on
 
-SolveSA::SolveSA(int seed, const State &state, OptimizeType opt_type)
-    : mt_(seed), init_state_(state), opt_type_(opt_type) {
+SolveSA::SolveSA(int seed, const State &state, OptimizeType opt_type, const Parameter &param)
+    : mt_(seed), init_state_(state), opt_type_(opt_type), param_(param) {
 }
 
-State SolveSA::Solve(int max_iter) {
+State SolveSA::Solve(int max_iter, SearchInfo &search) {
    State cur_state(init_state_), best_state(init_state_);
    ScoreType cur_score = cur_state.CalcScore(), best_score = cur_score;
 
    rep(iter, max_iter) {
+      search.AddIter();
+      if (search.IsTerminate()) {
+         break;
+      }
+
       State n_state(cur_state);
 
       auto move_list = cur_state.GetNeibours();
@@ -42,6 +47,7 @@ State SolveSA::Solve(int max_iter) {
 
       if (changeBetter(best_score, cur_score, opt_type_)) {
          debug_sa(iter, best_score);
+         search.BestUpdate();
 
          best_state = cur_state;
       }

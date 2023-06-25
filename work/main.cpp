@@ -1,11 +1,10 @@
 #include <bits/stdc++.h>
 
+#include "Utility.hpp"
 #include "XorShift.hpp"
 #include "Parameter.hpp"
+#include "SearchInfo.hpp"
 #include "State.hpp"
-#include "Utility.hpp"
-
-#include "debug.hpp"
 
 using namespace std;
 
@@ -15,11 +14,6 @@ template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.s
 // clang-format on
 
 int main() {
-   State state;
-
-   int a = 1;
-   debug(a);
-
    cerr << "Result="
         << "dummy"
         << " ";

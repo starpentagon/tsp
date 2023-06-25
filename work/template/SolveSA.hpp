@@ -5,14 +5,15 @@
 #include "Utility.hpp"
 #include "State.hpp"
 #include "Parameter.hpp"
+#include "SearchInfo.hpp"
 
 namespace std {
 
 class SolveSA {
   public:
-   SolveSA(int seed, const State& state, OptimizeType opt_type);
+   SolveSA(int seed, const State& state, OptimizeType opt_type, const Parameter& param);
 
-   State Solve(int max_iter);
+   State Solve(int max_iter, SearchInfo& search);
 
   protected:
    // 遷移を行うかチェックする
