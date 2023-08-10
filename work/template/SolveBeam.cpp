@@ -59,10 +59,12 @@ State SolveBeam::Solve(SearchInfo &search) {
    }
 
    State best_state(init_state_);
-   ScoreType best_search_score = GetWorstValue(opt_type_);
+   ScoreType best_eval_score = GetWorstValue(opt_type_);
 
    for (const auto &[search_score, state] : cur_state_list) {
-      if (changeBetter(best_search_score, search_score, opt_type_)) {
+      auto eval_score = state.CalcScore();
+
+      if (changeBetter(best_eval_score, eval_score, opt_type_)) {
          best_state = state;
       }
    }

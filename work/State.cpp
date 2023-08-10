@@ -17,6 +17,14 @@ template<class T> istream& operator>>(istream& is, vector<T>& vec){ rep(i, vec.s
 template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.size()) os << vec[i] << (i+1==(int)vec.size() ? "" : " "); return os;}
 // clang-format on
 
+bool operator>(const State& lhs, const State& rhs) {
+   assert(false);
+}
+
+bool operator<(const State& lhs, const State& rhs) {
+   assert(false);
+}
+
 State::State()
     : turn_(0), first_move_(kInvalidMove) {
    debug_st(turn_);

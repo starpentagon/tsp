@@ -13,6 +13,7 @@ static constexpr MoveType kInvalidMove = -1;  // 無効な遷移
 using MoveIndex = int;
 
 namespace std {
+
 class State {
   public:
    State();
@@ -54,4 +55,9 @@ class State {
    int turn_;             // 遷移させた回数
    MoveType first_move_;  // 文脈ありゲームでroot局面から最初の遷移を記録する(文脈なしゲームの場合は不要)
 };
+
+// Beam search用の比較演算子
+bool operator>(const State& lhs, const State& rhs);
+bool operator<(const State& lhs, const State& rhs);
+
 }  // namespace std
