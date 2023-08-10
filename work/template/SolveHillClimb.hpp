@@ -1,4 +1,5 @@
 // 山登り法
+#pragma once
 
 #include <bits/stdc++.h>
 

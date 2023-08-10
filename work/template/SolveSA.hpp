@@ -1,4 +1,5 @@
 // 焼きなまし法
+#pragma once
 
 #include <bits/stdc++.h>
 

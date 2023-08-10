@@ -1,4 +1,6 @@
 // パラメタ管理
+#pragma once
+
 #include <bits/stdc++.h>
 
 namespace std {

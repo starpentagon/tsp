@@ -1,4 +1,5 @@
 // Beam search
+#pragma once
 
 #include <bits/stdc++.h>
 

@@ -1,4 +1,5 @@
 // 共通処理を宣言/定義する
+#pragma once
 
 #include <bits/stdc++.h>
 #include "XorShift.hpp"

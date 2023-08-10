@@ -1,4 +1,5 @@
 // 貪欲法
+#pragma once
 
 #include <bits/stdc++.h>
 

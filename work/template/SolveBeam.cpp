@@ -5,6 +5,10 @@ using namespace std;
 
 // clang-format off
 #define rep(i, n) for (int i = 0; (i) < (int)(n); (i)++)
+#define repp(i, s, n) for (int i = s; (i) < (int)(n); (i)++)
+
+#define all(v) begin(v),end(v)
+#define rall(v) rbegin(v),rend(v)
 
 template<class T> bool chmax(T &a, const T &b) {if(a<b) {a=b; return true;} return false; }
 template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} return false; }
