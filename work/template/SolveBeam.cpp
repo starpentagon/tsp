@@ -1,7 +1,7 @@
 #include "SolveBeam.hpp"
 #include "debug_bm.hpp"
 
-   using namespace std;
+using namespace std;
 
 // clang-format off
 #define rep(i, n) for (int i = 0; (i) < (int)(n); (i)++)
@@ -42,7 +42,7 @@ State SolveBeam::Solve(SearchInfo &search) {
       }
 
       if ((int)n_state_list.size() > beam_width) {
-         // operator>(const State &lhs, const State &rhs)が必要
+         // bool operator>(const State &lhs, const State &rhs)が必要
          nth_element(n_state_list.begin(), n_state_list.begin() + beam_width, n_state_list.end(), std::greater<>());
          n_state_list.resize(beam_width);
       }
