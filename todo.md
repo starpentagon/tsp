@@ -10,7 +10,7 @@ $ cd heuristic_contest.git
 $ git push --mirror https://github.com/starpentagon/XXX.git
 $ cd ..
 $ rm -rf heuristic_contest.git
-$ git clone --bare https://github.com/starpentagon/XXX.git
+$ git clone https://github.com/starpentagon/XXX.git
 ```
 
 * .profileのahcコマンドを修正
