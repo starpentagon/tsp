@@ -9,9 +9,6 @@
 
 template<class T> bool chmax(T &a, const T &b) {if(a<b) {a=b; return true;} return false; }
 template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} return false; }
-
-template<class T> istream& operator>>(istream& is, vector<T>& vec){ rep(i, vec.size()) is >> vec[i]; return is;}
-template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.size()) os << vec[i] << (i+1==(int)vec.size() ? "" : " "); return os;}
 // clang-format on
 
 using namespace std;
