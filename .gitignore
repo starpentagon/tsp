@@ -38,6 +38,7 @@ combined.cpp
 core
 
 *.csv
+*.log
 .ipynb_checkpoints
 Makefile.gen
 Makefile_sub.gen
