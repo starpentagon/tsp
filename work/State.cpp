@@ -19,10 +19,12 @@ template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.s
 
 bool operator>(const State& lhs, const State& rhs) {
    assert(false);
+   return false;
 }
 
 bool operator<(const State& lhs, const State& rhs) {
    assert(false);
+   return false;
 }
 
 State::State()
