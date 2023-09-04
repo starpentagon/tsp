@@ -34,6 +34,7 @@
 scripts
 *.txt
 main
+main_test
 combined.cpp
 core
 
