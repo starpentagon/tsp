@@ -29,6 +29,15 @@ State::State()
    debug_st(turn_);
 }
 
+State State::operator=(State& state) {
+   // メンバ変数をコピー
+   // Note: メンバ変数を追加した場合はここに追加する
+   turn_ = state.turn_;
+   first_move_ = state.first_move_;
+
+   return *this;
+}
+
 bool State::IsFinished() const {
    assert(false);
    return false;

@@ -17,6 +17,7 @@ namespace std {
 class State {
   public:
    State();
+   State operator=(State& state);
 
    // 終端条件かどうか
    bool IsFinished() const;
