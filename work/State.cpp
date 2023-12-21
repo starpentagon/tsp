@@ -7,8 +7,8 @@ using namespace std;
 #define rep(i, n) for (int i = 0; (i) < (int)(n); (i)++)
 #define repp(i, s, n) for (int i = s; (i) < (int)(n); (i)++)
 
-#define all(v) begin(v),end(v)
-#define rall(v) rbegin(v),rend(v)
+#define ALL(v) begin(v),end(v)
+#define RALL(v) rbegin(v),rend(v)
 
 template<class T> bool chmax(T &a, const T &b) {if(a<b) {a=b; return true;} return false; }
 template<class T> bool chmin(T &a, const T &b) {if(a>b) {a=b; return true;} return false; }
@@ -29,7 +29,7 @@ State::State()
    debug_st(turn_);
 }
 
-State State::operator=(State& state) {
+State State::operator=(const State& state) {
    // メンバ変数をコピー
    // Note: メンバ変数を追加した場合はここに追加する
    turn_ = state.turn_;
