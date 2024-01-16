@@ -22,6 +22,9 @@ template<class T> ostream& operator<<(ostream& os, vector<T>& vec){ rep(i, vec.s
 // clang-format on
 
 int main() {
+   ios::sync_with_stdio(false);
+   std::cin.tie(nullptr);
+
    cerr << "Result="
         << "dummy"
         << " ";

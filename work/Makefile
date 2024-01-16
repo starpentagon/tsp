@@ -4,7 +4,8 @@ CC = ccache g++
 # core dump出力用
 #CFLAGS = -g -Wall --std=c++17 -O0 -DLOCAL
 
-CFLAGS = -Wall --std=c++17 -O2 -DLOCAL
+#CFLAGS = -Wall --std=c++17 -O3 -funroll-loops -DLOCAL $(CFLAGS_EXTRA)
+CFLAGS = -Wall --std=c++17 -O3 -DLOCAL $(CFLAGS_EXTRA)
 #CFLAGS = -pg -g -Wall --std=c++17 -O0 -DLOCAL
 
 ALL: XorShift.o Parameter.o State.o Utility.o main.o
