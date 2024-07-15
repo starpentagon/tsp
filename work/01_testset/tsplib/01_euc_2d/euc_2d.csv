@@ -1,0 +1,78 @@
+name,comment,dim,dist_lb,dist_ub
+a280,drilling problem (Ludwig),280,2579,2579
+berlin52,52 locations in Berlin (Groetschel),52,7542,7542
+bier127,127 Biergaerten in Augsburg (Juenger/Reinelt),127,118282,118282
+brd14051,BR Deutschland in den Grenzen von 1989 (Bachem/Wottawa),14051,469385,469385
+ch130,130 city problem (Churritz),130,6110,6110
+ch150,150 city Problem (churritz),150,6528,6528
+d1291,Drilling problem (Reinelt),1291,50801,50801
+d15112,Deutschland-Problem (A.Rohe),15112,1573084,1573084
+d1655,Drilling problem (Reinelt),1655,62128,62128
+d18512,Bundesrepublik Deutschland (mit Ex-DDR) (Bachem/Wottawa),18512,645238,645238
+d198,Drilling problem (Reinelt),198,15780,15780
+d2103,Drilling problem (Reinelt),2103,80450,80450
+d493,Drilling problem (Reinelt),493,35002,35002
+d657,Drilling problem (Reinelt),657,48912,48912
+eil101,101-city problem (Christofides/Eilon),101,629,629
+eil51,51-city problem (Christofides/Eilon),51,426,426
+eil76,76-city problem (Christofides/Eilon),76,538,538
+fl1400,Drilling problem (Reinelt),1400,20127,20127
+fl1577,Drilling problem (Reinelt),1577,22249,22249
+fl3795,Drilling problem (Reinelt),3795,28772,28772
+fl417,Drilling problem (Reinelt),417,11861,11861
+fnl4461,Die 5 neuen Laender Deutschlands (Ex-DDR) (Bachem/Wottawa),4461,182566,182566
+gil262,262-city problem (Gillet/Johnson),262,2378,2378
+kroA100,100-city problem A (Krolak/Felts/Nelson),100,21282,21282
+kroA150,150-city problem A (Krolak/Felts/Nelson),150,26524,26524
+kroA200,200-city problem A (Krolak/Felts/Nelson),200,29368,29368
+kroB100,100-city problem B (Krolak/Felts/Nelson),100,22141,22141
+kroB150,150-city problem B (Krolak/Felts/Nelson),150,26130,26130
+kroB200,200-city problem B (Krolak/Felts/Nelson),200,29437,29437
+kroC100,100-city problem C (Krolak/Felts/Nelson),100,20749,20749
+kroD100,100-city problem D (Krolak/Felts/Nelson),100,21294,21294
+kroE100,100-city problem E (Krolak/Felts/Nelson),100,22068,22068
+lin105,105-city problem (Subproblem of lin318),105,14379,14379
+lin318,318-city problem (Lin/Kernighan),318,42029,42029
+nrw1379,1379 Orte in Nordrhein-Westfalen (Bachem/Wottawa),1379,56638,56638
+p654,Drilling problem (Reinelt),654,34643,34643
+pcb1173,Drilling problem (Juenger/Reinelt),1173,56892,56892
+pcb3038,Drilling problem (Junger/Reinelt),3038,137694,137694
+pcb442,Drilling problem (Groetschel/Juenger/Reinelt),442,50778,50778
+pr1002,1002-city problem (Padberg/Rinaldi),1002,259045,259045
+pr107,107-city problem (Padberg/Rinaldi),107,44303,44303
+pr124,124-city problem (Padberg/Rinaldi),124,59030,59030
+pr136,136-city problem (Padberg/Rinaldi),136,96772,96772
+pr144,144-city problem (Padberg/Rinaldi),144,58537,58537
+pr152,152-city problem (Padberg/Rinaldi),152,73682,73682
+pr226,226-city problem (Padberg/Rinaldi),226,80369,80369
+pr2392,2392-city problem (Padberg/Rinaldi),2392,378032,378032
+pr264,264-city problem (Padberg/Rinaldi),264,49135,49135
+pr299,299-city problem (Padberg/Rinaldi),299,48191,48191
+pr439,439-city problem (Padberg/Rinaldi),439,107217,107217
+pr76,76-city problem (Padberg/Rinaldi),76,108159,108159
+rat195,Rattled grid (Pulleyblank),195,2323,2323
+rat575,Rattled grid (Pulleyblank),575,6773,6773
+rat783,Rattled grid (Pulleyblank),783,8806,8806
+rat99,Rattled grid (Pulleyblank),99,1211,1211
+rd100,100-city random TSP (Reinelt),100,7910,7910
+rd400,400-city random TSP (Reinelt),400,15281,15281
+rl11849,11849-city TSP (Reinelt),11849,923288,923288
+rl1304,1304-city TSP (Reinelt),1304,252948,252948
+rl1323,1323-city TSP (Reinelt),1323,270199,270199
+rl1889,1889-city TSP (Reinelt),1889,316536,316536
+rl5915,5915-city TSP (Reinelt),5915,565530,565530
+rl5934,5934-city TSP (Reinelt),5934,556045,556045
+st70,70-city problem (Smith/Thompson),70,675,675
+ts225,"225-city problem (Juenger,Raecke,Tschoecke)",225,126643,126643
+tsp225,A TSP problem (Reinelt),225,3916,3916
+u1060,Drilling problem problem (Reinelt),1060,224094,224094
+u1432,Drilling problem (Reinelt),1432,152970,152970
+u159,Drilling problem (Reinelt),159,42080,42080
+u1817,Drilling problem (Reinelt),1817,57201,57201
+u2152,Drilling problem (Reinelt),2152,64253,64253
+u2319,Drilling problem (Reinelt),2319,234256,234256
+u574,Drilling problem (Reinelt),574,36905,36905
+u724,Drilling problem (Reinelt),724,41910,41910
+usa13509,The file US.lat-long.Z can be found in the directory /doc/geography.,13509,19982859,19982859
+vm1084,1084-city problem (Reinelt),1084,239297,239297
+vm1748,1784-city problem (Reinelt),1748,336556,336556
