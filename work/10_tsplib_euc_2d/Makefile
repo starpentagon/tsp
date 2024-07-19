@@ -8,13 +8,9 @@ CFLAGS = -Wall --std=c++17 -O3 -DLOCAL $(CFLAGS_EXTRA)
 #CFLAGS = -Wall --std=c++17 -O3 -funroll-loops -DLOCAL $(CFLAGS_EXTRA)
 #CFLAGS = -pg -g -Wall --std=c++17 -O0 -DLOCAL $(CFLAGS_EXTRA)
 
-ALL: XorShift.o Utility.o Parameter.o SearchInfo.o State.o main.o
+ALL: TSPSolver.o main.o
 	$(CC) $(CFLAGS) -o main$(POSIX) \
-	XorShift.o \
-	Utility.o \
-	Parameter.o \
-	SearchInfo.o \
-	State.o \
+	TSPSolver.o \
 	main.o \
 
 clean:
@@ -22,6 +18,12 @@ clean:
 
 run:
 	./main
+
+TSPSolver.o: ../TSPSolver.cpp
+	$(CC) $(CFLAGS) -o $@ -c $<
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 .cpp.o:
 	$(CC) $(CFLAGS) -o $@ -c $<
