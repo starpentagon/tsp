@@ -37,7 +37,8 @@ int main() {
    auto metrics = LoadProblem();
    TSPSolver solver(metrics);
 
-   auto tour = solver.SolveNN();
+   // auto tour = solver.SolveNN();
+   auto tour = solver.SolveKruskal();
    Distance total_dist = solver.CalcTourDist(tour);
 
    chrono::system_clock::time_point end = chrono::system_clock::now();

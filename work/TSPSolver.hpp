@@ -18,6 +18,8 @@ enum DistType {
    kDistEuc2D = 0,  // 2次元ユークリッド距離
 };
 
+// 距離テーブルを管理するクラス
+// @note ノード数がkDistTableLimit以下ならばO(N^2)の距離テーブルを持つ
 class Metrics {
   public:
    Metrics(const DistType dist_type);
@@ -32,6 +34,9 @@ class Metrics {
       return N_;
    }
 
+   // 距離行列が対称かどうかを返す
+   bool IsSymmetric() const;
+
   protected:
    void Init();
 
@@ -43,10 +48,6 @@ class Metrics {
    vector<vector<Distance>> dist_table_;
 };
 
-// ノードの座標情報からノード間の距離リスト(距離の昇順でソート済)を求める
-// @note ユークリッド距離は四捨五入して整数化する
-vector<vector<DistNode>> GetEuclidDistNodeList(const vector<pair<double, double>>& node_pos_list);
-
 class TSPSolver {
   public:
    TSPSolver(const Metrics& metrics);
@@ -54,11 +55,19 @@ class TSPSolver {
    // 貪欲法(Nearest Neighbor)で解く
    vector<int> SolveNN();
 
+   // 貪欲法(Kruskal)で解く
+   vector<int> SolveKruskal();
+
    Distance CalcTourDist(const vector<int>& tour) const;
 
   protected:
    // 貪欲法(Nearest Neighbor)で初期化する
+   // 計算量: O(N^2)
    void InitNearestNeighbor(int start_node = 0);
+
+   // 貪欲法(Kruskal)で初期化する
+   // 計算量: O(N^2 log N)
+   void InitKruskal();
 
    int N_;  // 頂点数
 
